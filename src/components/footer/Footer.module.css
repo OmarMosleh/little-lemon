@@ -5,6 +5,10 @@ footer{
     align-items: center;
     position: fixed;
     bottom:0;
+    left:0;
     width:100%;
     text-align: center;
+    padding: 0.7rem;
+    background-color: var(--primary-color-one);
+    color: var(--secondary-color-three)
 }

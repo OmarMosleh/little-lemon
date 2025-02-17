@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap');
+:root{
+    --primary-color-one: #495e57;
+    --primary-color-two: #face14;
+    --secondary-color-one: #ee9972;
+    --secondary-color-two: #fbdabb;
+    --secondary-color-three:#edefee;
+    --text-color:#333333;
+    --subheading-font : "Markazi Text", serif;
+}
 
+body{
+    background-color: var(--secondary-color-three);
+    font-family:"Karla", serif;
+    color:var(--text-color)
+    /* font-family:var(--subheading-font); */
 
+}
 
+.container{
+    /* background-color: antiquewhite; */
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
 
 
