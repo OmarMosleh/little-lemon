@@ -1,0 +1,23 @@
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+    font-weight: 600;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+a:hover{
+    text-shadow: 0.7px 0.7px 1px rgb(199, 193, 193);
+}
