@@ -1,0 +1,14 @@
+.primaryButton{
+    width: fit-content;
+    padding: 0.7rem 2rem;
+    background-color:var(--primary-color-two);
+    border-radius: 1rem;
+    margin:0.3rem;
+    font-weight: 500;
+}
+.primaryButton:hover{
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transform: scale(105%);
+    transition: 0.2s ease;
+}

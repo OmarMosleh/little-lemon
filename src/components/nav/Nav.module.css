@@ -1,6 +1,6 @@
 nav{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 0.5rem;
@@ -9,12 +9,13 @@ nav{
 ul{
     display: flex;
     list-style: none;
+    /* padding-left: 0px; */
 }
 a{
     text-decoration: none;
     color: var(--text-color);
     font-weight: 600;
-    margin-left: 1rem;
+    padding-left: 0.5rem;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }

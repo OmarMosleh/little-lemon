@@ -1,0 +1,32 @@
+.header_container{
+    background-color: #495e57;
+    padding:2rem;
+    height: 20rem;
+    margin-bottom: 10rem;
+    display: flex;
+
+}
+.header_container h2{
+    color: var(--primary-color-two);
+    font-family: var(--subheading-font);
+    font-size: 3.8rem;
+}
+.header_container h3{
+    font-family: var(--subheading-font);
+    color: var(--secondary-color-three);
+    font-size: 2.3rem;
+    position: relative;
+    top: -1.5rem;
+}
+.header_container p{
+    color:var(--secondary-color-three);
+    font-size: 1.3rem;
+    max-width: 50%;
+    margin-bottom: 1rem;
+}
+.post{
+    max-width: 35%;
+}
+.post img{
+    border-radius: 8%;
+}
