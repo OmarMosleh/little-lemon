@@ -14,7 +14,7 @@ const Header = () => {
       <PrimaryButton name="Reserve a table"/>
       </div>
       <div className={styles.post}>
-        <img src={require("../../images/downloads/header.jpg")} alt="" />
+        <img src={require("../../Assets/downloads/header.jpg")} alt="" />
       </div>
     </div>
   )

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Nav.module.css"
+import { NavLink } from "react-router";
 
 const Nav = () => {
   return (
@@ -9,11 +10,11 @@ const Nav = () => {
           <img src={require("../../icons_assets/Logo .svg").default} alt="" />
         </div>
         <div>
-            <ul>
-                <li><a href="/" target="_blank">About</a></li>
-                <li><a href="/" target="_blank">Home</a></li>
-                <li><a href="/" target="_blank">Services</a></li>
-                <li><a href="/" target="_blank">Book a table</a></li>
+            <ul className={styles.ul}>
+                <li><NavLink className={styles.navLink} href="/" target="_blank">About</NavLink></li>
+                <li><NavLink className={styles.navLink} href="/" target="_blank">Home</NavLink></li>
+                <li><NavLink className={styles.navLink} href="/" target="_blank">Services</NavLink></li>
+                <li><NavLink className={styles.navLink} href="/" target="_blank">Book a table</NavLink></li>
             </ul>
         </div>
       </nav>
