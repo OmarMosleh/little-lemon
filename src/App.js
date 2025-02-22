@@ -13,9 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={ <Layout />} >
           <Route index element={<Home/>} />
-          <Route path="blogs" element={<About />} />
-          <Route path="contact" element={<Booking />} />
-          <Route path="contact" element={<OurServices />} />
+          <Route path="about" element={<About />} />
+          <Route path="booking" element={<Booking />} />
+          <Route path="services" element={<OurServices />} />
           <Route path="*" element={<Nopage />} />
         </Route>
       </Routes>
