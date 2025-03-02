@@ -11,7 +11,7 @@ const Header = () => {
       <p>we are a family owned Mediterranean restaurant, 
         focused on traditional recipes served with modern twist.
       </p>
-      <PrimaryButton name="Reserve a table"/>
+      <PrimaryButton name="Reserve a table" reference="/Booking"/>
       </div>
       <div className={styles.post}>
         <img src={require("../../Assets/downloads/header.jpg")} alt="" />

@@ -22,4 +22,5 @@ main {
     gap: 1rem; 
     justify-content: flex-start; 
     align-items: stretch; 
+    justify-content: center;
 }

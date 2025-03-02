@@ -1,11 +1,14 @@
 import React from 'react'
 import styles from './PrimaryButton.module.css'
-const PrimaryButton = ({name}) => {
+import { Link } from 'react-router'
+const PrimaryButton = ({name, reference}) => {
   return (
     <>
+    <Link to={reference} className={styles.link}>
     <div className={styles.primaryButton}>
       {name}
     </div>
+    </Link>
     </>
 
   )
