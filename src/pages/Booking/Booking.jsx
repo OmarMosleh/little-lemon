@@ -1,21 +1,6 @@
 import { useState } from "react";
 import styles from "./Booking.module.css"
-const Booking = ({handleChange, handleSubmit, formData}) => {
-//   const [formData, setFormData] = useState({
-//     date: new Date().toJSON().slice(0, 10),
-//     time: "20:00",
-//     Guests: 1,
-//     occasion: "Birthday"
-//   });
-
-//   const handleChange = (e) => {
-//     setFormData({...formData, [e.target.id]: e.target.value})
-//   }
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     console.log('Form submitted:', formData);
-//   };
-
+const Booking = ({handleChange, handleSubmit, formData, availableTimes }) => {
 
   return (
     <>
@@ -25,13 +10,18 @@ const Booking = ({handleChange, handleSubmit, formData}) => {
         <label htmlFor="date">Choose date</label>
         <input type="date" value={formData.date} id="date" onChange={handleChange} />
         <label htmlFor="time">Choose time</label>
-        <select id="time" value={formData.time} onChange={handleChange}>
-          <option>17:00</option>
+        <select id="time" value={formData.time? formData.time : "17:00"} onChange={handleChange}>
+          {/* <option>17:00</option>
           <option>18:00</option>
           <option>19:00</option>
           <option>20:00</option>
           <option>21:00</option>
-          <option>22:00</option>
+          <option>22:00</option> */}
+          {
+            availableTimes.map(time => 
+              <option key={time} value={time}>{time}</option>
+            )
+          }
         </select>
         <label htmlFor="guests">Number of guests</label>
         <input type="number" placeholder="1" min="1" max="10" id="guests" onChange={handleChange}/>
