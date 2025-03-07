@@ -1,7 +1,9 @@
 export const initialState = ["17:00", "18:00", "19:00", "20:00", "22:00"];
-
+export const initializeTimes = () => {
+  
+}
 // you can modify state = initialState as a default parameter
-export const availableTimeReducer = (state, action) => {
+export const availableTimeReducer = (state = initialState, action) => {
   // destruct the payload from the action
   const { payload } = action;
   switch (action.type) {

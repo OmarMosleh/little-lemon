@@ -1,0 +1,12 @@
+.times_ul{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+
+}
+.times_ul li {
+   margin: 0.3rem;
+   background-color: aquamarine;
+   padding: 0.5rem;
+   border-radius: 8px
+}

@@ -11,12 +11,6 @@ const Booking = ({handleChange, handleSubmit, formData, availableTimes }) => {
         <input type="date" value={formData.date} id="date" onChange={handleChange} />
         <label htmlFor="time">Choose time</label>
         <select id="time" value={formData.time? formData.time : "17:00"} onChange={handleChange}>
-          {/* <option>17:00</option>
-          <option>18:00</option>
-          <option>19:00</option>
-          <option>20:00</option>
-          <option>21:00</option>
-          <option>22:00</option> */}
           {
             availableTimes.map(time => 
               <option key={time} value={time}>{time}</option>
