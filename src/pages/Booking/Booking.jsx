@@ -1,7 +1,15 @@
-import { useState } from "react";
+import { useNavigate } from "react-router";
+// import { useState } from "react";
 import styles from "./Booking.module.css"
-const Booking = ({handleChange, handleSubmit, formData, availableTimes }) => {
-
+const Booking = ({handleChange, formData, availableTimes }) => {
+  let navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    if(window.submitAPI(formData)){
+      navigate("/booking-confirmation");
+    };
+  };
   return (
     <>
     <div className={styles.container}>

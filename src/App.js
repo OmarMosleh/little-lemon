@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router";
 import { useState, useReducer, useEffect } from "react";
 import Layout from "./pages/layout/Layout";
 import Home from "./pages/Home/Home";
@@ -7,6 +7,7 @@ import About from "./pages/About/About";
 import Booking from "./pages/Booking/Booking";
 import OurServices from "./pages/OurServices/OurServices";
 import Nopage from "./pages/Nopage/Nopage";
+import BookingConfirmation from "./pages/BookingConfirmation/BookingConfirmation";
 
 function App() {
   const initialState = ["17:00", "18:00", "19:00", "20:00", "22:00"];
@@ -56,10 +57,13 @@ function App() {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-  };
+  // let navigate = useNavigate();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("Form submitted:", formData);
+  //   navigate("/booking-confirmation");
+
+  // };
 
   return (
     <BrowserRouter>
@@ -72,12 +76,13 @@ function App() {
             element={
               <Booking
                 handleChange={handleChange}
-                handleSubmit={handleSubmit}
+                // handleSubmit={handleSubmit}
                 formData={formData}
                 availableTimes={availableTimes}
               />
             }
           />
+          <Route path="booking-confirmation" element={<BookingConfirmation />} />
           <Route path="services" element={<OurServices />} />
           <Route path="*" element={<Nopage />} />
         </Route>
